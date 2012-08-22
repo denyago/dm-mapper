@@ -33,7 +33,7 @@ describe 'Relationship - Onet To Many' do
 
       model         Order
       relation_name :orders
-      repository    :postgres
+      repository    :postgres_alt
     end
 
     class UserOrderMapper < DataMapper::Mapper::VeritasMapper
