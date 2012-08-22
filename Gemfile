@@ -1,12 +1,12 @@
 source :rubygems
 
-gem 'dm-mapper', :path => '.'
+gem 'dm-mapper', git: "https://github.com/solnic/dm-mapper.git"
 
-gem 'veritas',               :path => '../veritas'
-gem 'veritas-sql-generator', :path => '../veritas-sql-generator'
-gem 'veritas-optimizer',     :path => '../veritas-optimizer'
-gem 'veritas-do-adapter',    :path => '../veritas-do-adapter'
-gem 'virtus',                :path => '../virtus'
+gem 'veritas', git: 'https://github.com/solnic/veritas.git'
+gem 'veritas-sql-generator', git: 'https://github.com/solnic/veritas-sql-generator.git', branch: "string-concat-function-support"
+gem 'veritas-optimizer', git: 'https://github.com/dkubb/veritas-optimizer.git'
+gem 'veritas-do-adapter', git: 'https://github.com/dkubb/veritas-do-adapter.git'
+gem 'virtus', git: 'https://github.com/solnic/virtus.git'
 
 group :test do
   gem 'backports'
