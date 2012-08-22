@@ -28,6 +28,7 @@ CONFIG = YAML.load_file("#{ROOT}/config/database.yml")
 
 CONFIG.each do |name, uri|
   DataMapper.setup(name, uri)
+  DataMapper.setup(name+"_alt", uri)
 end
 
 DATABASE_ADAPTER = DataMapper.adapters[:postgres]
